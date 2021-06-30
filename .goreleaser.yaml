@@ -1,0 +1,13 @@
+project_name: fj
+builds:
+  - env: [CGO_ENABLED=0]
+    goos:
+      - linux
+      - windows
+      - darwin
+      - freebsd
+    goarch:
+      - 386
+      - amd64
+      - arm
+      - arm64
