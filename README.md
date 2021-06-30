@@ -14,7 +14,7 @@ json[0].commit.author.date = "2021-06-30T16:44:30Z"
 fj can un-flatten too, which is useful to get a subset of JSON:
 
 <pre>
-❯ curl -s "https://api.github.com/repos/golang/go/commits?per_page=1" | fj | grep commit.author | <b>jf -u</b> | jq
+❯ curl -s "https://api.github.com/repos/golang/go/commits?per_page=1" | fj | grep commit.author | <b>fj -u</b> | jq
 [
   {
     "commit": {
