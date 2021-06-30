@@ -1,12 +1,12 @@
-name: build
+name: Build & Release
 
 permissions:
-  content: write
+  contents: write
 
 on:
   push:
     branches:
-      - 'master'
+      - 'main'
     tags:
       - 'v*'
   pull_request:
