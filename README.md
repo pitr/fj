@@ -2,13 +2,13 @@
 
 Flatten your JSON.
 
-`fj` flattens JSON into a value and its full path per line, so data can be worked on using UNIX tools such as grep/awk/etc.
+`fj` flattens JSON into a value and its full path per line, so data can be worked on using UNIX tools such as grep/awk/cut/etc.
 
 <pre>
 ❯ curl -s "https://api.github.com/repos/golang/go/commits?per_page=1" | <b>fj</b> | grep commit.author
-json[0].commit.author.name = "Josh Bleecher Snyder"
-json[0].commit.author.email = "josharian@gmail.com"
-json[0].commit.author.date = "2021-06-30T16:44:30Z"
+json[0].commit.author.name  "Josh Bleecher Snyder"
+json[0].commit.author.email "josharian@gmail.com"
+json[0].commit.author.date  "2021-06-30T16:44:30Z"
 </pre>
 
 fj can un-flatten too, which is useful to get a subset of JSON:

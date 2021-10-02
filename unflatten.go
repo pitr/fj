@@ -18,7 +18,7 @@ var (
 	bObjOpen    = []byte{'{'}
 	bObjClose   = []byte{'}'}
 
-	breaks = [256]bool{' ': true, '.': true, '[': true, ']': true}
+	breaks = [256]bool{'\t': true, '.': true, '[': true, ']': true}
 )
 
 func unflatten(in io.Reader, out io.Writer, stream bool) {
@@ -57,7 +57,7 @@ func unflatten(in io.Reader, out io.Writer, stream bool) {
 			case '[':
 				field++
 				onarr = line[i+1] != '"'
-			case ' ':
+			case '\t':
 				// compute if things should be closed
 				closeFields(out, isarr[field+1:])
 				for _, key := range keys[field+1:] {
@@ -65,7 +65,7 @@ func unflatten(in io.Reader, out io.Writer, stream bool) {
 				}
 				keys = keys[:field+1]
 				isarr = isarr[:field+1]
-				_, err = out.Write(line[i+3:])
+				_, err = out.Write(line[i+1:])
 				fail(err)
 				break CHARSCAN
 

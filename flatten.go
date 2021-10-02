@@ -16,7 +16,7 @@ var (
 	bNull   = []byte("null\n")
 	bDot    = []byte{'.'}
 	bPrefix = []byte("json")
-	bSep    = []byte(" = ")
+	bSep    = []byte{'\t'}
 )
 
 func flatten(in io.Reader, out io.Writer, stream bool) {
