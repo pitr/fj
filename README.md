@@ -36,7 +36,8 @@ fj can un-flatten too, which is useful to get a subset of JSON:
 Alternatively, if you have Go compiler:
 
 ```
-❯ go get -u github.com/pitr/fj
+❯ go install github.com/pitr/fj@latest # OR
+❯ go get -u github.com/pitr/fj         # legacy way
 ```
 
 ## Usage
