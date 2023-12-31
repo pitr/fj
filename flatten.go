@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"io"
 
-	json "github.com/pitr/jsontokenizer"
 	"github.com/valyala/bytebufferpool"
+	json "pitr.ca/jsontokenizer"
 )
 
 var (

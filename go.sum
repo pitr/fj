@@ -1,6 +1,6 @@
 github.com/matryer/is v1.4.0 h1:sosSmIWwkYITGrxZ25ULNDeKiMNzFSr4V/eqBQP0PeE=
 github.com/matryer/is v1.4.0/go.mod h1:8I/i5uYgLzgsgEloJE1U6xx5HkBQpAZvepWuujKwMRU=
-github.com/pitr/jsontokenizer v0.2.0 h1:P0Wtw2aYDOVDmaFjRjOKxMl73R0QxEAWYwli+kd7f/M=
-github.com/pitr/jsontokenizer v0.2.0/go.mod h1:KATI4UQwEA2a5MjKoszKlyZjcQZHY2DARFx01kRgUFY=
 github.com/valyala/bytebufferpool v1.0.0 h1:GqA5TC/0021Y/b9FG4Oi9Mr3q7XYx6KllzawFIhcdPw=
 github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyCJ6HpOuEn7z0Csc=
+pitr.ca/jsontokenizer v0.3.0 h1:Qr70hk4/wcpFEgu/6aJ+nvYQ6x/xS0WOkC627ceiI/M=
+pitr.ca/jsontokenizer v0.3.0/go.mod h1:3DJdA2QNOU6cI0XkH6pRKZ4Oe8G5SDRUQ6PFAwaQ3YY=
